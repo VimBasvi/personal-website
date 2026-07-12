@@ -1,4 +1,4 @@
-# Vimbisai Basvi — Personal Website
+# Personal Portfolio Website
 
 A luxury-editorial personal website for Vimbisai Basvi: engineer, educator, and builder.
 
