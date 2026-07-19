@@ -146,10 +146,15 @@ h2 {
     font-size: .78rem
 }
 
+.socials a,
 .socials span {
-    display: flex;
-    align-items: center;
-    gap: 7px
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.socials a:hover {
+  color: var(--blue);
 }
 
 .socials svg {
