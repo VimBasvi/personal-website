@@ -37,8 +37,16 @@ export default function Home() {
       <nav aria-label="Primary navigation">
         <a href="#about">About</a><a href="#journey">Journey</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
       </nav>
-      <button className="button button-dark">Résumé <ArrowRight size={15} /></button>
-    </header>
+        <a
+          className="button button-dark"
+          href="/vimbisai-basvi-resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Résumé
+          <ArrowRight size={15} />
+        </a>    
+      </header>
 
     <section id="top" className="hero shell">
       <div className="hero-copy">
