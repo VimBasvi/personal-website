@@ -1,14 +1,9 @@
-import Image from "next/image";
-import { ArrowRight, BookOpen, Code2, GitBranch, Globe2, Heart, Link, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Heart} from "lucide-react";
 
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
-const pillars = [
-  { icon: Globe2, title: "Global Perspective", copy: "Born in Zimbabwe, educated in the United States, and shaped by a year teaching in France." },
-  { icon: Code2, title: "Problem Solver", copy: "I enjoy breaking complex problems into clear, practical, and thoughtful solutions." },
-  { icon: BookOpen, title: "Lifelong Learner", copy: "I continually expand my technical knowledge while learning from people and unfamiliar experiences." },
-  { icon: Heart, title: "Purpose Driven", copy: "I want my work to create meaningful opportunities and improve everyday experiences." },
-];
+
 
 const milestones = ["Zimbabwe", "United States", "Yale", "France", "Now"];
 
@@ -37,10 +32,7 @@ export default function Home() {
 
     <Hero />
 
-    <section id="about" className="about shell card-panel">
-      <div className="about-intro"><p className="section-kicker">About Me</p><p>I’m a Yale Computer Science graduate working at the intersection of software engineering, education, and product development. Across Zimbabwe, the United States, and France, I’ve learned to approach problems with curiosity, adaptability, faith, and care.</p><a href="#journey">More about my journey <ArrowRight size={14} /></a></div>
-      {pillars.map(({ icon: Icon, title, copy }) => <article className="pillar" key={title}><Icon /><h3>{title}</h3><p>{copy}</p></article>)}
-    </section>
+    <About />
 
     <section id="journey" className="journey">
       <div className="shell journey-inner"><div><p className="gold">My Journey</p><h2>Where I’ve been.<br />What I’ve learned.</h2></div><ol>{milestones.map((m, i) => <li key={m}><span>{i + 1}</span><strong>{m}</strong></li>)}</ol></div>
