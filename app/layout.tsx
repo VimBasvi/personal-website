@@ -1,3 +1,6 @@
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -24,7 +27,11 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

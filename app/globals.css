@@ -60,7 +60,8 @@ h2 {
 .monogram {
     font-family: var(--serif);
     font-size: 1.8rem;
-    font-weight: 600
+    font-weight: 600;
+    letter-spacing: -0.12em;
 }
 
 .nav nav {

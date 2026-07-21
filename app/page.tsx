@@ -32,21 +32,6 @@ const skillGroups = [
 
 export default function Home() {
   return <main>
-    <header className="nav shell">
-      <a className="monogram" href="#top" aria-label="Vimbisai Basvi home">VB</a>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a><a href="#journey">Journey</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-      </nav>
-        <a
-          className="button button-dark"
-          href="/vimbisai-basvi-resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Résumé
-          <ArrowRight size={15} />
-        </a>    
-      </header>
 
     <section id="top" className="hero shell">
       <div className="hero-copy">
@@ -104,6 +89,5 @@ export default function Home() {
     <section id="skills" className="skills shell card-panel"><div><h2>Technical Skills</h2><div className="skill-grid">{skillGroups.map(([name, items]) => <article key={name}><h3>{name}</h3><p>{items}</p></article>)}</div></div><aside><h2>Currently Learning</h2><p>Product discovery · System design · FastAPI · AI-assisted software engineering · Cloud architecture</p><h2>Field Notes</h2><a href="#contact">What I’m learning from my first customer interviews <ArrowRight size={14} /></a></aside></section>
 
     <section id="contact" className="contact shell"><div><h2>Let’s build something meaningful together.</h2><p>I’m open to thoughtful opportunities, collaborations, and conversations about technology, education, and product development.</p></div><a className="button button-dark" href="mailto:vimbisai.basvi@yale.edu">Get In Touch <ArrowRight size={16} /></a></section>
-    <footer><div className="shell"><span className="monogram">VB</span><p>© 2026 Vimbisai Basvi</p><p>Built with care, Next.js, and TypeScript.</p></div></footer>
   </main>;
 }
