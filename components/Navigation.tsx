@@ -1,23 +1,24 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export default function Navigation() {
   return (
     <header className="nav shell">
-      <a
+      <Link
         className="monogram"
         href="/"
         aria-label="Vimbisai Basvi home"
       >
         VB
-      </a>
+      </Link>
 
       <nav aria-label="Primary navigation">
-        <a href="/#about">About</a>
-        <a href="/#journey">Journey</a>
-        <a href="/#projects">Projects</a>
-        <a href="/#experience">Experience</a>
-        <a href="/#skills">Skills</a>
-        <a href="/#contact">Contact</a>
+        <Link href="/#about">About</Link>
+        <Link href="/#journey">Journey</Link>
+        <Link href="/#projects">Projects</Link>
+        <Link href="/#experience">Experience</Link>
+        <Link href="/#skills">Skills</Link>
+        <Link href="/#contact">Contact</Link>
       </nav>
 
       <a
