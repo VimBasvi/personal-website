@@ -1,7 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 
-export default function ContactSection() {
+export default function Contact() {
   return (
     <section id="contact" className="contact shell">
       <div>

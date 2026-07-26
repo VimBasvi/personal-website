@@ -1,4 +1,4 @@
-import { ArrowRight, Heart } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const skillGroups = [
   ["Languages", "Python · JavaScript · TypeScript · Java · SQL · HTML/CSS"],

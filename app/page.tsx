@@ -1,4 +1,3 @@
-import { ArrowRight, Contact, Heart} from "lucide-react";
 
 import Hero from "@/components/Hero";
 import About from "@/components/About";
