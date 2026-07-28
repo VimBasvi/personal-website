@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const projects = [
   { status: "Research Phase", title: "Elegance", copy: "Exploring a platform that helps people discover trusted professionals experienced in textured hair.", tags: ["Product Research", "Interviews", "In Progress"] },
@@ -11,7 +12,7 @@ export default function Projects() {
     <section id="projects" className="section shell">
       <div className="section-heading">
         <h2>Featured Projects</h2>
-        <a href="#projects">View all projects <ArrowRight size={14} /></a>
+        <a href="/projects">View all projects <ArrowRight size={14} /></a>
       </div>
       <div className="project-grid">
         {projects.map(p => (
