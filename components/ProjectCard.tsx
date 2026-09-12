@@ -25,7 +25,6 @@ export default function ProjectCard({
         ) : (
           <div className="project-placeholder" aria-hidden="true">
             <span>{project.title.charAt(0)}</span>
-            <p>{project.title}</p>
           </div>
         )}
       </div>
