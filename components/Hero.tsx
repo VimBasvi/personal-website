@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   ArrowRight,
   GitBranch,
@@ -27,10 +28,10 @@ export default function Hero() {
         </p>
 
         <div className="actions">
-          <a className="button button-dark" href="#projects">
+          <Link className="button button-dark" href="/projects">
             View My Work
             <ArrowRight size={16} />
-          </a>
+          </Link>
 
           <a className="button button-light" href="#contact">
             Get In Touch
@@ -64,7 +65,7 @@ export default function Hero() {
 
           <span>
             <MapPin />
-            West New York, NJ
+            NJ
           </span>
         </div>
       </div>
@@ -72,10 +73,10 @@ export default function Hero() {
       <div className="portrait">
         <Image
           src="/hero-image.png"
-          alt="Vimbisai Basvi smiling outdoors"
+          alt="Vimbisai Basvi smiling in a library"
           fill
           priority
-          sizes="(max-width: 800px) 100vw, 48vw"
+          sizes="(max-width: 900px) 100vw, 55vw"
         />
       </div>
     </section>

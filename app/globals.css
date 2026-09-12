@@ -92,16 +92,17 @@ h2 {
 }
 
 .hero {
-    min-height: 650px;
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center
+    grid-template-columns: 48% 52%;
+    align-items: stretch;
+    min-height: 675px;
 }
 
 .hero-copy {
-    padding: 70px 0;
     position: relative;
-    z-index: 2
+    z-index: 2;
+    padding: 70px 36px 105px 0;
 }
 
 .eyebrow {
@@ -163,22 +164,32 @@ h2 {
 }
 
 .portrait {
-    height: 600px;
     position: relative;
-    align-self: end;
-    margin-left: -80px
+    align-self: stretch;
+    min-height: 675px;
+    margin-left: -45px;
+    margin-right: min(-20px, calc(590px - 50vw));
 }
 
 .portrait:after {
-    content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, var(--ivory) 0%, transparent 35%)
+    content: "";
+    pointer-events: none;
+    background: linear-gradient(
+        90deg,
+        var(--ivory) 0%,
+        rgba(251, 248, 241, 0.92) 10%,
+        rgba(251, 248, 241, 0.5) 23%,
+        rgba(251, 248, 241, 0.14) 34%,
+        transparent 43%
+    );
 }
 
 .portrait img {
     object-fit: cover;
-    object-position: center 30%
+    object-position: 58% 50%;
+    filter: saturate(0.94) contrast(0.98);
 }
 
 .card-panel {
@@ -493,22 +504,27 @@ footer .shell {
     }
 
     .hero {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 
     .hero-copy {
-        padding-bottom: 10px
+        padding: 60px 0 28px;
     }
 
     .portrait {
-        margin: 0;
-        height: 520px
+        height: 540px;
+        min-height: 0;
+        margin: 0 -20px;
     }
 
     .portrait:after {
-        background: linear-gradient(180deg, var(--ivory) 0%, transparent 28%)
+        background: linear-gradient(
+            180deg,
+            var(--ivory) 0%,
+            rgba(251, 248, 241, 0.9) 10%,
+            transparent 30%
+        );
     }
-
     .about {
         grid-template-columns: 1fr 1fr
     }
