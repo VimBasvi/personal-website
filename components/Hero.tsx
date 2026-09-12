@@ -71,7 +71,7 @@ export default function Hero() {
 
       <div className="portrait">
         <Image
-          src="/hero-image.jpeg"
+          src="/hero-image.png"
           alt="Vimbisai Basvi smiling outdoors"
           fill
           priority

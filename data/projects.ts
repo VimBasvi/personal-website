@@ -16,7 +16,7 @@ export const projects: Project[] = [
     slug: "elegance",
     status: "In Development",
     description:
-      "A trusted stylist-discovery platform for textured-hair communities, evolving from my original COCO booking application through customer research and product discovery.",
+      "Exploring a platform that helps people discover trusted professionals experienced in textured hair.",
     technologies: ["Product Research", "Next.js", "TypeScript"],
     featured: true,
   },
