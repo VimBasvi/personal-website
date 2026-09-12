@@ -92,18 +92,18 @@ h2 {
 }
 
 .hero {
-    position: relative;
     display: grid;
-    grid-template-columns: 48% 52%;
+    grid-template-columns: minmax(0, 1fr) min(520px, 54vw);
     align-items: stretch;
-    min-height: 675px;
+    min-height: 640px;
 }
 
 .hero-copy {
     position: relative;
     z-index: 2;
-    padding: 70px 36px 105px 0;
+    padding: 75px 42px 95px 0;
 }
+
 
 .eyebrow {
     font-family: var(--serif);
@@ -130,10 +130,11 @@ h2 {
 }
 
 .lede {
-    max-width: 570px;
+    max-width: 430px;
     font-size: 1.05rem;
-    color: #2d4057
+    color: #2d4057;
 }
+
 
 .actions,
 .socials {
@@ -166,30 +167,31 @@ h2 {
 .portrait {
     position: relative;
     align-self: stretch;
-    min-height: 675px;
-    margin-left: -45px;
-    margin-right: min(-20px, calc(590px - 50vw));
+    min-height: 640px;
+    margin: 0;
 }
 
 .portrait:after {
     position: absolute;
-    inset: 0;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 85px;
     content: "";
     pointer-events: none;
     background: linear-gradient(
         90deg,
         var(--ivory) 0%,
-        rgba(251, 248, 241, 0.92) 10%,
-        rgba(251, 248, 241, 0.5) 23%,
-        rgba(251, 248, 241, 0.14) 34%,
-        transparent 43%
+        rgba(251, 248, 241, 0.72) 28%,
+        rgba(251, 248, 241, 0.22) 68%,
+        transparent 100%
     );
 }
 
 .portrait img {
     object-fit: cover;
-    object-position: 58% 50%;
-    filter: saturate(0.94) contrast(0.98);
+    object-position: 50% 50%;
 }
 
 .card-panel {
