@@ -46,7 +46,7 @@ export const projects: Project[] = [
     slug: "yalieplan",
     status: "Team Project",
     description:
-      "An AI-assisted scheduling application. I built core Django authentication and user-storage functionality, developed interface controls, and helped integrate the React frontend with the backend.",
+      "An AI-assisted scheduling application. I built core Django authentication and user-storage functionality, and helped integrate the React frontend with the backend working in a team of 5.",
     technologies: ["React", "Django", "REST API", "Gemini API"],
     featured: true,
   },
