@@ -287,7 +287,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: start;
-    min-height: 145px;
+    min-height: 180px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -331,32 +331,66 @@ h2 {
     top: 5px;
     left: 5%;
     width: 90%;
-    height: 85px;
+    height: 105px;
     color: var(--gold);
+    opacity: 0.68;
     pointer-events: none;
 }
 
 .journey-icon {
     display: grid;
     place-items: center;
-    width: 52px;
-    height: 52px;
+    width: 86px;
+    height: 86px;
     background: var(--ink);
     color: #e5bd68;
 }
 
-.journey-icon svg {
-    width: 34px;
-    height: 34px;
+/* Shared SVG behavior */
+.journey-icon > svg {
+    display: block;
 }
 
-.journey strong {
-    color: white;
-    font-family: var(--serif);
-    font-size: 0.85rem;
-    white-space: nowrap;
+/* Country outlines */
+.journey-icon .country-mark {
+    width: 76px;
+    height: 58px;
+    overflow: visible;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
+.journey-icon .country-mark path {
+    vector-effect: non-scaling-stroke;
+}
+
+/* The US is naturally wider */
+.journey-icon .country-mark-us {
+    width: 88px;
+}
+
+/* Yale medallion */
+.yale-mark {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    font: 600 2rem/1 var(--serif);
+}
+
+/* Compass */
+.journey-icon > .lucide {
+    width: 52px;
+    height: 52px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+}
 .section {
     padding-block: 72px
 }
@@ -662,14 +696,33 @@ footer .shell {
     }
 
     .journey-icon {
-        width: 44px;
-        height: 44px;
+        width: 54px;
+        height: 54px;
     }
 
-    .journey-icon svg {
-        width: 27px;
-        height: 27px;
+    .journey-icon .country-mark {
+    width: 46px;
+    height: 35px;
+    stroke-width: 1.8;
     }
+
+    .journey-icon .country-mark-us {
+        width: 52px;
+    }
+
+    .yale-mark {
+        width: 38px;
+        height: 38px;
+        border-width: 1.5px;
+        font-size: 1.45rem;
+    }
+
+    .journey-icon > .lucide {
+        width: 38px;
+        height: 38px;
+    }
+
+ 
 
     .skill-grid {
         grid-template-columns: 1fr 1fr
