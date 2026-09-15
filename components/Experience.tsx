@@ -44,7 +44,7 @@ export default function Experience() {
   return (
     <section id="experience" className="section shell experience-layout">
       <div>
-        <h2>Experience</h2>
+        <h2>Selected Experience</h2>
         <div className="timeline">
           {experience.map(x => (
             <article key={x.role}>
