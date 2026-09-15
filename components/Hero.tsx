@@ -17,7 +17,7 @@ export default function Hero() {
         <h1>
           Vimbisai
           <br />
-          Basvi<span>.</span>
+          Basvi<span></span>
         </h1>
 
         <p className="role">Engineer. Educator. Builder.</p>
