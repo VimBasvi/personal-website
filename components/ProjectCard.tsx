@@ -1,6 +1,7 @@
 import type { Project } from "@/data/projects";
 import { ArrowUpRight, GitBranch } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 type ProjectCardProps = {
   project: Project;
@@ -38,7 +39,11 @@ export default function ProjectCard({
           ))}
         </div>
         <div className="project-links">
-          {project.githubUrl ? (
+          {project.caseStudyUrl ? (
+            <Link href={project.caseStudyUrl}>
+              Read case study <ArrowUpRight size={15} />
+            </Link>
+          ) : project.githubUrl ? (
             <a href={project.githubUrl} target="_blank" rel="noreferrer">
               <GitBranch size={15} />
               View code

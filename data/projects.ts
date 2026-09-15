@@ -8,16 +8,22 @@ export type Project = {
   liveUrl?: string;
   image?: string;
   featured?: boolean;
+  caseStudyUrl?: string;
 };
 
 export const projects: Project[] = [
   {
     title: "Project Elegance",
     slug: "elegance",
-    status: "In Development",
+    status: "Research in Progress",
     description:
-      "Exploring a platform that helps people discover trusted professionals experienced in textured hair.",
-    technologies: ["Product Research", "Next.js", "TypeScript"],
+      "Exploring how people find, evaluate, and build trust with textured-hair stylists before deciding what to build.",
+    technologies: [
+      "Product Discovery",
+      "User Research",
+      "Customer Interviews",
+    ],
+    caseStudyUrl: "/projects/elegance",
     featured: true,
   },
   {

@@ -39,6 +39,14 @@ export default function Projects() {
                   <span key={technology}>{technology}</span>
                 ))}
               </div>
+              {project.caseStudyUrl && (
+                <Link
+                  className="featured-case-study-link"
+                  href={project.caseStudyUrl}
+                >
+                  Read case study <ArrowRight size={14} />
+                </Link>
+              )}
             </div>
           </article>
         ))}
