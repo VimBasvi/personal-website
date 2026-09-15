@@ -18,7 +18,7 @@ const experience = [
     role: "CodePath Tech Fellow",
     org: "CodePath",
     copy:
-      "Guided students through data structures, algorithms, problem-solving strategies, and collaborative technical learning.",
+       "Guided students through data structures and algorithms in Python, reinforcing problem-solving strategies and collaborative technical learning.",
   },
   {
     role: "Student Coordinator",
